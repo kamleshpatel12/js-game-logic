@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #081b31;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 5rem;
+    
+}
+
+
+.choice{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+
+.rock{
+    background-image: url("rock.png");
+}
+
+.paper {
+    background-image: url("paper.png");
+}
+
+.scissor {
+    background-image: url("scissors.png");
+}
+
+.rock:hover,
+.paper:hover,
+.scissor:hover {
+    outline: 4px solid rgba(0, 128, 255, 0.6);  /* soft blue outline */
+    outline-offset: 4px;
+    cursor: pointer;
+    transition: outline 0.2s ease;
+}
+
+
+.score-board{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap:3rem;
+    margin-top: 4rem;
+}
+
+#user-score, #Computer-score{
+    font-size: 3rem;
+    margin-left: 17px;
+}
+
+.message{
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#msg{
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    
+}
+
+.disclaimer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #f1f1f1;
+    border-left: 6px solid #2196F3;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 8px;
+}
